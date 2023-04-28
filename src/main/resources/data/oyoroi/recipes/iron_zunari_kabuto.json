@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " h ",
+        "l l",
+        "l l"
+    ],
+    "key": {
+        "l": {
+            "item": "oyoroi:iron_lamellar_plate"
+        },
+        "h": {
+            "item": "minecraft:iron_helmet"
+        }
+    },
+    "result": {
+        "item": "oyoroi:iron_zunari_kabuto"
+    }
+}

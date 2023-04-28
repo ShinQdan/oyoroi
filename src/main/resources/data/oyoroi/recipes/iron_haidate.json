@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "lhl",
+        "l l",
+        "l l"
+    ],
+    "key": {
+        "l": {
+            "item": "oyoroi:iron_lamellar_plate"
+        },
+        "h": {
+            "item": "oyoroi:hakama"
+        }
+    },
+    "result": {
+        "item": "oyoroi:iron_haidate"
+    }
+}

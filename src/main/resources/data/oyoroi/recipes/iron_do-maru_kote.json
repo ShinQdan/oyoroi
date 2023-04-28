@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "l l",
+        "lkl",
+        "i i"
+    ],
+    "key": {
+        "l": {
+            "item": "minecraft:leather"
+        },
+        "k": {
+            "item": "oyoroi:iron_do-maru"
+        },
+        "i": {
+            "item": "minecraft:lilac"
+        }
+    },
+    "result": {
+        "item": "oyoroi:iron_do-maru_k"
+    }
+}

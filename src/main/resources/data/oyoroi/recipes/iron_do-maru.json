@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "l l",
+        "lll",
+        "lll"
+    ],
+    "key": {
+        "l": {
+            "item": "oyoroi:iron_lamellar_plate"
+        }
+    },
+    "result": {
+        "item": "oyoroi:iron_do-maru"
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "rlr",
+        "i i",
+        "   "
+    ],
+    "key": {
+        "l": {
+            "item": "minecraft:leather_leggings"
+        },
+        "r": {
+            "item": "minecraft:rose_bush"
+        },
+        "i": {
+            "item": "minecraft:lilac"
+        }
+    },
+    "result": {
+        "item": "oyoroi:hakama"
+    }
+}

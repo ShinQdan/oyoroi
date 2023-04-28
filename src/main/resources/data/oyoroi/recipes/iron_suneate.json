@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "i i",
+        "l l",
+        "p p"
+    ],
+    "key": {
+        "i": {
+            "item": "oyoroi:iron_lamellar_plate"
+        },
+        "l": {
+            "item": "minecraft:leather"
+        },
+        "p": {
+            "tag": "minecraft:planks"
+        }
+    },
+    "result": {
+        "item": "oyoroi:iron_suneate"
+    }
+}

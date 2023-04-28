@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "isi",
+        "   ",
+        "   "
+    ],
+    "key": {
+        "i": {
+            "tag": "forge:ingots/iron"
+        },
+        "s": {
+            "item": "minecraft:string"
+        }
+    },
+    "result": {
+        "item": "oyoroi:iron_lamellar_plate"
+    }
+}

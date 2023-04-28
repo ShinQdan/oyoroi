@@ -1,0 +1,15 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"tag": "forge:ingots/iron"
+		},
+		{
+			"item": "oyoroi:iron_suji_kabuto"
+		}
+	],
+	"result": {
+		"count": 1,
+		"item": "oyoroi:iron_suji_kabuto_menpo"
+	}
+}

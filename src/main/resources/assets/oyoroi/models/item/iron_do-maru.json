@@ -1,0 +1,7 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "oyoroi:items/iron_do-maru",
+		"layer1": "oyoroi:items/iron_do-maru_leather"
+	}
+}

@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " g ",
+        " k ",
+        "   "
+    ],
+    "key": {
+        "k": {
+            "item": "oyoroi:iron_suji_kabuto_menpo"
+        },
+		"g": {
+			"tag": "forge:ingots/gold"
+		}
+    },
+    "result": {
+        "item": "oyoroi:iron_suji_kabuto_menpo_circle"
+    }
+}

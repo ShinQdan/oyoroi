@@ -1,0 +1,6 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "oyoroi:items/iron_suji_kabuto_menpo"
+	}
+}
