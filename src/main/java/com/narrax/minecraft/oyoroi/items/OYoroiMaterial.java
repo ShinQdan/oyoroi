@@ -17,8 +17,17 @@ public class OYoroiMaterial implements ArmorMaterial {
 	public static final OYoroiMaterial IRON_E5 = new OYoroiMaterial("iron_oyoroi", ArmorMaterials.IRON, 5, 15, Ingredient.of(ModItems.LAMELLAR_PLATE.get()));
 	public static final OYoroiMaterial IRON_D01 = new OYoroiMaterial("iron_oyoroi", ArmorMaterials.IRON, 1, 15, Ingredient.of(ModItems.LAMELLAR_PLATE.get()), -1);
 	public static final OYoroiMaterial IRON_D1 = new OYoroiMaterial("iron_oyoroi", ArmorMaterials.IRON, 1, 15, Ingredient.of(ModItems.LAMELLAR_PLATE.get()), 1);
-	public static final OYoroiMaterial IRON_D2 = new OYoroiMaterial("iron_oyoroi", ArmorMaterials.IRON, 1, 15, Ingredient.of(ModItems.LAMELLAR_PLATE.get()), 2);
-	public static final OYoroiMaterial IRON_D2_E1 = new OYoroiMaterial("iron_oyoroi", ArmorMaterials.IRON, 2, 15, Ingredient.of(ModItems.LAMELLAR_PLATE.get()), 3);
+	public static final OYoroiMaterial IRON_D2_E1 = new OYoroiMaterial("iron_oyoroi", ArmorMaterials.IRON, 2, 15, Ingredient.of(ModItems.LAMELLAR_PLATE.get()), 2);
+
+	public static final OYoroiMaterial NETHERITE = new OYoroiMaterial("netherite_oyoroi", ArmorMaterials.NETHERITE, 1, 37);
+	public static final OYoroiMaterial NETHERITE_E1 = new OYoroiMaterial("netherite_oyoroi", ArmorMaterials.NETHERITE, 2, 37);
+	public static final OYoroiMaterial NETHERITE_E3 = new OYoroiMaterial("netherite_oyoroi", ArmorMaterials.NETHERITE, 3, 37);
+	public static final OYoroiMaterial NETHERITE_E4 = new OYoroiMaterial("netherite_oyoroi", ArmorMaterials.NETHERITE, 4, 37);
+	public static final OYoroiMaterial NETHERITE_E5 = new OYoroiMaterial("netherite_oyoroi", ArmorMaterials.NETHERITE, 5, 37);
+	public static final OYoroiMaterial NETHERITE_D02 = new OYoroiMaterial("netherite_oyoroi", ArmorMaterials.NETHERITE, 1, 37, -2);
+	public static final OYoroiMaterial NETHERITE_D01 = new OYoroiMaterial("netherite_oyoroi", ArmorMaterials.NETHERITE, 1, 37, -1);
+	public static final OYoroiMaterial NETHERITE_D1 = new OYoroiMaterial("netherite_oyoroi", ArmorMaterials.NETHERITE, 1, 37, 1);
+	public static final OYoroiMaterial NETHERITE_D2_E1 = new OYoroiMaterial("netherite_oyoroi", ArmorMaterials.NETHERITE, 2, 37, 2);
 
 	public static final OYoroiMaterial LEATHER = new OYoroiMaterial("leather_oyoroi", ArmorMaterials.LEATHER, 1, 5, Ingredient.of(Items.LEATHER));
 
@@ -65,6 +74,10 @@ public class OYoroiMaterial implements ArmorMaterial {
 			base.getKnockbackResistance(), 
 			repairIngredient
 		);
+	}
+
+	public OYoroiMaterial(String name, ArmorMaterial base, int addition, int durabilityMult, int defAddition){
+		this(name, base, addition, durabilityMult, base.getRepairIngredient(), defAddition);
 	}
 
 	public OYoroiMaterial(String name, ArmorMaterial base, int addition, int durabilityMult){

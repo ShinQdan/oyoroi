@@ -1,0 +1,7 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "oyoroi:items/iron_suji_kabuto_menpo",
+		"layer1": "oyoroi:items/netherite_suji_kabuto_crescent_overlay"
+	}
+}

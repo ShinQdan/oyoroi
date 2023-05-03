@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:smithing",
+	"addition": {
+		"item": "minecraft:netherite_ingot"
+	},
+	"base": {
+		"item": "oyoroi:iron_zunari_kabuto"
+	},
+	"result": {
+		"item": "oyoroi:netherite_zunari_kabuto"
+	}
+}

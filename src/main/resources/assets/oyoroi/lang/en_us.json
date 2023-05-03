@@ -1,6 +1,10 @@
 {
     "itemGroup.oyoroi": "O-Yoroi Items",
 
+    "item.oyoroi.iron_lamellar_plate": "Iron Lamellar Plate",
+
+    "item.oyoroi.hakama": "Hakama",
+
     "item.oyoroi.iron_zunari_kabuto": "Iron Zunari Kabuto",
 
     "item.oyoroi.iron_suji_kabuto": "Iron Suji Kabuto",
@@ -23,9 +27,31 @@
     "item.oyoroi.iron_do-maru_l": "Iron Do",
 
     "item.oyoroi.iron_haidate": "Iron Haidate",
-    "item.oyoroi.hakama": "Hakama",
 
     "item.oyoroi.iron_suneate": "Iron Suneate",
 
-    "item.oyoroi.iron_lamellar_plate": "Iron Lamellar Plate"
+    "item.oyoroi.netherite_zunari_kabuto": "Netherite Zunari Kabuto",
+
+    "item.oyoroi.netherite_suji_kabuto": "Netherite Suji Kabuto",
+    "item.oyoroi.netherite_suji_kabuto_menpo": "Netherite Suji Kabuto",
+    "item.oyoroi.netherite_suji_kabuto_circle": "Netherite Suji Kabuto",
+    "item.oyoroi.netherite_suji_kabuto_leaves": "Netherite Suji Kabuto",
+    "item.oyoroi.netherite_suji_kabuto_antlers": "Netherite Suji Kabuto",
+    "item.oyoroi.netherite_suji_kabuto_crescent": "Netherite Suji Kabuto",
+    "item.oyoroi.netherite_suji_kabuto_horns": "Netherite Suji Kabuto",
+    "item.oyoroi.netherite_suji_kabuto_menpo_circle": "Netherite Suji Kabuto",
+    "item.oyoroi.netherite_suji_kabuto_menpo_leaves": "Netherite Suji Kabuto",
+    "item.oyoroi.netherite_suji_kabuto_menpo_antlers": "Netherite Suji Kabuto",
+    "item.oyoroi.netherite_suji_kabuto_menpo_crescent": "Netherite Suji Kabuto",
+    "item.oyoroi.netherite_suji_kabuto_menpo_horns": "Netherite Suji Kabuto",
+
+    "item.oyoroi.netherite_do-maru": " Netherite Do",
+    "item.oyoroi.netherite_do-maru_k": "Netherite Do",
+    "item.oyoroi.netherite_do-maru_s": "Netherite Do",
+    "item.oyoroi.netherite_do-maru_m": "Netherite Do",
+    "item.oyoroi.netherite_do-maru_l": "Netherite Do",
+
+    "item.oyoroi.netherite_haidate": "Netherite Haidate",
+
+    "item.oyoroi.netherite_suneate": "Netherite Suneate"
 }

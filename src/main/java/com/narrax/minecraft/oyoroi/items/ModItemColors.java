@@ -14,7 +14,7 @@ public class ModItemColors {
 	public static void registerItemColors(RegisterColorHandlersEvent.Item event){
 		event.register(
 			(stack, index) -> {
-				if(index!=1 && stack.getItem() instanceof OYoroiItem oyItem){
+				if(index!=1 && index!=4 && stack.getItem() instanceof OYoroiItem oyItem){
 					return oyItem.getColor(stack);
 				}else return -1;
 			},

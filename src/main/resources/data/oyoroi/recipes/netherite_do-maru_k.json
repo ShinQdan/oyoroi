@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:smithing",
+	"addition": {
+		"item": "minecraft:netherite_ingot"
+	},
+	"base": {
+		"item": "oyoroi:iron_do-maru_k"
+	},
+	"result": {
+		"item": "oyoroi:netherite_do-maru_k"
+	}
+}
