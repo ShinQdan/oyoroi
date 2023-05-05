@@ -1,10 +1,10 @@
 {
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "oyoroi:items/iron_do-maru",
-		"layer1": "oyoroi:items/netherite_do-maru_leather_kote_overlay",
-		"layer2": "oyoroi:items/iron_do-maru_kote",
-		"layer3": "oyoroi:items/iron_do-maru_small_sode",
-		"layer4": "oyoroi:items/netherite_do-maru_small_sode_overlay"
+		"layer0": "oyoroi:item/iron_do-maru",
+		"layer1": "oyoroi:item/netherite_do-maru_leather_kote_overlay",
+		"layer2": "oyoroi:item/iron_do-maru_kote",
+		"layer3": "oyoroi:item/iron_do-maru_small_sode",
+		"layer4": "oyoroi:item/netherite_do-maru_small_sode_overlay"
 	}
 }

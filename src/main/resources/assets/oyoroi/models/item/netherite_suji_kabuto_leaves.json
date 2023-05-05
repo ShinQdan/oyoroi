@@ -1,7 +1,7 @@
 {
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "oyoroi:items/iron_suji_kabuto",
-		"layer1": "oyoroi:items/netherite_suji_kabuto_leaves_overlay"
+		"layer0": "oyoroi:item/iron_suji_kabuto",
+		"layer1": "oyoroi:item/netherite_suji_kabuto_leaves_overlay"
 	}
 }

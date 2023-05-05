@@ -1,9 +1,9 @@
 {
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "oyoroi:items/iron_do-maru",
-		"layer1": "oyoroi:items/iron_do-maru_kote_leather",
-		"layer2": "oyoroi:items/iron_do-maru_kote",
-		"layer3": "oyoroi:items/iron_do-maru_medium_sode"
+		"layer0": "oyoroi:item/iron_do-maru",
+		"layer1": "oyoroi:item/iron_do-maru_kote_leather",
+		"layer2": "oyoroi:item/iron_do-maru_kote",
+		"layer3": "oyoroi:item/iron_do-maru_medium_sode"
 	}
 }

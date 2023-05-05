@@ -4,17 +4,22 @@ import com.narrax.minecraft.oyoroi.OYoroi;
 import com.narrax.minecraft.oyoroi.items.OYoroiItem.ModelPointer;
 
 import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Item.Properties;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.event.CreativeModeTabEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
+@Mod.EventBusSubscriber(modid = OYoroi.MODID, value = Dist.CLIENT, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ModItems {
 	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, OYoroi.MODID);
 
-	public static final RegistryObject<Item> LAMELLAR_PLATE = ITEMS.register("iron_lamellar_plate", () -> new Item(new Properties().tab(CreativeModeTab.TAB_COMBAT)));
+	public static final RegistryObject<Item> LAMELLAR_PLATE = ITEMS.register("iron_lamellar_plate", () -> new Item(new Properties()));
 
 	public static final RegistryObject<Item> IRON_ZUNARI_KABUTO = ITEMS.register("iron_zunari_kabuto", () -> new OYoroiItem(OYoroiMaterial.IRON, EquipmentSlot.HEAD, ModelPointer.ZUNARI_KABUTO));
 	public static final RegistryObject<Item> IRON_SUJI_KABUTO = ITEMS.register("iron_suji_kabuto", () -> new OYoroiItem(OYoroiMaterial.IRON, EquipmentSlot.HEAD, ModelPointer.SUJI_KABUTO));
@@ -59,4 +64,13 @@ public class ModItems {
 	public static final RegistryObject<Item> NETHERITE_SUNEATE = ITEMS.register("netherite_suneate", () -> new OYoroiItem(OYoroiMaterial.NETHERITE, EquipmentSlot.FEET, ModelPointer.SUNEATE));
 
 	public static final RegistryObject<Item> HAKAMA = ITEMS.register("hakama", () -> new OYoroiItem(OYoroiMaterial.LEATHER, EquipmentSlot.LEGS, ModelPointer.HAKAMA));
+
+	@SubscribeEvent
+	public static void creativeTabBuildContents(CreativeModeTabEvent.BuildContents event){
+		if(event.getTab()==CreativeModeTabs.COMBAT){
+			ITEMS.getEntries().stream().filter(entry -> entry.get() instanceof OYoroiItem).forEach(entry -> event.accept(entry));
+		}else if(event.getTab()==CreativeModeTabs.INGREDIENTS){
+			event.accept(LAMELLAR_PLATE);
+		}
+	}
 }

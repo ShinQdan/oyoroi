@@ -32,7 +32,7 @@ public class OYoroiItem extends DyeableArmorItem {
 	}
 
 	public OYoroiItem(ArmorMaterial material, EquipmentSlot slot, Properties properties, ModelPointer model){
-		super(material, slot, properties.tab(CreativeModeTab.TAB_COMBAT));
+		super(material, slot, properties);
 		this.model = model;
 	}
 	

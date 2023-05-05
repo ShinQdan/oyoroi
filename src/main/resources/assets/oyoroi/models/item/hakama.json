@@ -1,7 +1,7 @@
 {
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "oyoroi:items/hakama",
-		"layer1": "oyoroi:items/hakama_overlay"
+		"layer0": "oyoroi:item/hakama",
+		"layer1": "oyoroi:item/hakama_overlay"
 	}
 }

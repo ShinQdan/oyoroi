@@ -1,6 +1,6 @@
 {
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "oyoroi:items/iron_lamellar_plate"
+		"layer0": "oyoroi:item/iron_lamellar_plate"
 	}
 }

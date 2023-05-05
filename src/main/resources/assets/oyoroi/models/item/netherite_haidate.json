@@ -1,10 +1,10 @@
 {
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "oyoroi:items/hakama",
-		"layer1": "oyoroi:items/hakama_overlay",
-		"layer2": "oyoroi:items/iron_haidate",
-		"layer3": "oyoroi:items/empty",
-		"layer4": "oyoroi:items/netherite_haidate_overlay"
+		"layer0": "oyoroi:item/hakama",
+		"layer1": "oyoroi:item/hakama_overlay",
+		"layer2": "oyoroi:item/iron_haidate",
+		"layer3": "oyoroi:item/empty",
+		"layer4": "oyoroi:item/netherite_haidate_overlay"
 	}
 }
