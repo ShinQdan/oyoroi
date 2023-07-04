@@ -18,21 +18,22 @@ import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.DyeableArmorItem;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.client.extensions.common.IClientItemExtensions;
 
 public class OYoroiItem extends DyeableArmorItem {
 	private final ModelPointer model;
 
-	public OYoroiItem(ArmorMaterial material, EquipmentSlot slot, ModelPointer model){
-		this(material, slot, new Properties(), model);
+	public OYoroiItem(ArmorMaterial material, ArmorItem.Type armorType, ModelPointer model){
+		this(material, armorType, new Item.Properties(), model);
 	}
 
-	public OYoroiItem(ArmorMaterial material, EquipmentSlot slot, Properties properties, ModelPointer model){
-		super(material, slot, properties);
+	public OYoroiItem(ArmorMaterial material, ArmorItem.Type armorType, Item.Properties properties, ModelPointer model){
+		super(material, armorType, properties);
 		this.model = model;
 	}
 	

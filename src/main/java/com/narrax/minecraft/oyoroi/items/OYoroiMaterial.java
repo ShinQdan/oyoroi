@@ -3,7 +3,7 @@ package com.narrax.minecraft.oyoroi.items;
 import com.narrax.minecraft.oyoroi.OYoroi;
 
 import net.minecraft.sounds.SoundEvent;
-import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ArmorMaterials;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -57,16 +57,16 @@ public class OYoroiMaterial implements ArmorMaterial {
 		this(
 			name,
 			new int[]{
-				base.getDurabilityForSlot(EquipmentSlot.HEAD) + addition*durabilityMult,
-				base.getDurabilityForSlot(EquipmentSlot.CHEST) + addition*durabilityMult,
-				base.getDurabilityForSlot(EquipmentSlot.LEGS) + addition*durabilityMult,
-				base.getDurabilityForSlot(EquipmentSlot.FEET) + addition*durabilityMult
+				base.getDurabilityForType(ArmorItem.Type.BOOTS) + addition*durabilityMult,
+				base.getDurabilityForType(ArmorItem.Type.LEGGINGS) + addition*durabilityMult,
+				base.getDurabilityForType(ArmorItem.Type.CHESTPLATE) + addition*durabilityMult,
+				base.getDurabilityForType(ArmorItem.Type.HELMET) + addition*durabilityMult
 			}, 
 			new int[]{
-				base.getDefenseForSlot(EquipmentSlot.HEAD),
-				base.getDefenseForSlot(EquipmentSlot.CHEST),
-				base.getDefenseForSlot(EquipmentSlot.LEGS),
-				base.getDefenseForSlot(EquipmentSlot.FEET)
+				base.getDefenseForType(ArmorItem.Type.BOOTS),
+				base.getDefenseForType(ArmorItem.Type.LEGGINGS),
+				base.getDefenseForType(ArmorItem.Type.CHESTPLATE),
+				base.getDefenseForType(ArmorItem.Type.HELMET)
 			},
 			base.getEnchantmentValue()+addition, 
 			base.getEquipSound(), 
@@ -96,13 +96,13 @@ public class OYoroiMaterial implements ArmorMaterial {
 	}
 
 	@Override
-	public int getDurabilityForSlot(EquipmentSlot slot) {
-		return durability[slot.getIndex()];
+	public int getDurabilityForType(ArmorItem.Type armorType){
+		return durability[armorType.getSlot().getIndex()];
 	}
 
 	@Override
-	public int getDefenseForSlot(EquipmentSlot slot) {
-		return protection[slot.getIndex()];
+	public int getDefenseForType(ArmorItem.Type armorType){
+		return protection[armorType.getSlot().getIndex()];
 	}
 
 	@Override
