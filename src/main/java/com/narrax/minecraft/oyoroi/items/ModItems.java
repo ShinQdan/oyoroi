@@ -8,7 +8,7 @@ import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Item.Properties;
 import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.event.CreativeModeTabEvent;
+import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.DeferredRegister;
@@ -66,10 +66,10 @@ public class ModItems {
 	public static final RegistryObject<Item> HAKAMA = ITEMS.register("hakama", () -> new OYoroiItem(OYoroiMaterial.LEATHER, ArmorItem.Type.LEGGINGS, ModelPointer.HAKAMA));
 
 	@SubscribeEvent
-	public static void creativeTabBuildContents(CreativeModeTabEvent.BuildContents event){
-		if(event.getTab()==CreativeModeTabs.COMBAT){
+	public static void creativeTabBuildContents(BuildCreativeModeTabContentsEvent  event){
+		if(event.getTabKey()==CreativeModeTabs.COMBAT){
 			ITEMS.getEntries().stream().filter(entry -> entry.get() instanceof OYoroiItem).forEach(entry -> event.accept(entry));
-		}else if(event.getTab()==CreativeModeTabs.INGREDIENTS){
+		}else if(event.getTabKey()==CreativeModeTabs.INGREDIENTS){
 			event.accept(LAMELLAR_PLATE);
 		}
 	}
