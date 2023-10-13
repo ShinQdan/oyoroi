@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "isi",
+        "i i",
+        "isi"
+    ],
+    "key": {
+        "i": {
+            "item": "minecraft:paper"
+        },
+        "s": {
+            "item": "minecraft:string"
+        }
+    },
+    "result": {
+        "item": "oyoroi:paper_lamellar_plate"
+    }
+}

@@ -2,7 +2,9 @@
 	"replace": false,
 	"values": [
 		"oyoroi:hakama",
+		"oyoroi:woollen_hakama",
 		"oyoroi:iron_haidate",
-		"oyoroi:netherite_haidate"
+		"oyoroi:netherite_haidate",
+		"oyoroi:paper_haidate"
 	]
 }

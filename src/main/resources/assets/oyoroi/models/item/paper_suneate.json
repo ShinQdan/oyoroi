@@ -1,0 +1,7 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "oyoroi:item/paper_suneate",
+		"layer1": "oyoroi:item/suneate_overlay"
+	}
+}

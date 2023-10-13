@@ -1,0 +1,8 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "oyoroi:item/hakama",
+		"layer1": "oyoroi:item/woollen_hakama_overlay",
+		"layer2": "oyoroi:item/paper_haidate"
+	}
+}

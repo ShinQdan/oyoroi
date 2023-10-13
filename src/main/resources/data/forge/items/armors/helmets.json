@@ -14,6 +14,7 @@
 		"oyoroi:iron_suji_kabuto_menpo_crescent",
 		"oyoroi:iron_suji_kabuto_menpo_horns",
 		"oyoroi:iron_suji_kabuto_menpo_leaves",
+
 		"oyoroi:netherite_zunari_kabuto",
 		"oyoroi:netherite_suji_kabuto",
 		"oyoroi:netherite_suji_kabuto_menpo",
@@ -26,6 +27,9 @@
 		"oyoroi:netherite_suji_kabuto_menpo_circle",
 		"oyoroi:netherite_suji_kabuto_menpo_crescent",
 		"oyoroi:netherite_suji_kabuto_menpo_horns",
-		"oyoroi:netherite_suji_kabuto_menpo_leaves"
+		"oyoroi:netherite_suji_kabuto_menpo_leaves",
+
+		"oyoroi:paper_zunari_kabuto",
+		"oyoroi:paper_suji_kabuto"
 	]
 }

@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "i i",
+        "l l",
+        "p p"
+    ],
+    "key": {
+        "i": {
+            "item": "oyoroi:paper_lamellar_plate"
+        },
+        "l": {
+            "tag": "minecraft:wool"
+        },
+        "p": {
+            "tag": "minecraft:planks"
+        }
+    },
+    "result": {
+        "item": "oyoroi:paper_suneate"
+    }
+}

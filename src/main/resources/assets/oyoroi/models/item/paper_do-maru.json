@@ -1,0 +1,7 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "oyoroi:item/paper_do-maru",
+		"layer1": "oyoroi:item/paper_do-maru_wool"
+	}
+}

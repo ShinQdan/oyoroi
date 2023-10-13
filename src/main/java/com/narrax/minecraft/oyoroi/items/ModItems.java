@@ -20,6 +20,7 @@ public class ModItems {
 	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, OYoroi.MODID);
 
 	public static final RegistryObject<Item> LAMELLAR_PLATE = ITEMS.register("iron_lamellar_plate", () -> new Item(new Properties()));
+	public static final RegistryObject<Item> PAPER_PLATE = ITEMS.register("paper_lamellar_plate", () -> new Item(new Properties()));
 
 	public static final RegistryObject<Item> IRON_ZUNARI_KABUTO = ITEMS.register("iron_zunari_kabuto", () -> new OYoroiItem(OYoroiMaterial.IRON, ArmorItem.Type.HELMET, ModelPointer.ZUNARI_KABUTO));
 	public static final RegistryObject<Item> IRON_SUJI_KABUTO = ITEMS.register("iron_suji_kabuto", () -> new OYoroiItem(OYoroiMaterial.IRON, ArmorItem.Type.HELMET, ModelPointer.SUJI_KABUTO));
@@ -63,7 +64,16 @@ public class ModItems {
 	public static final RegistryObject<Item> NETHERITE_HAIDATE = ITEMS.register("netherite_haidate", () -> new OYoroiItem(OYoroiMaterial.NETHERITE, ArmorItem.Type.LEGGINGS, ModelPointer.HAIDATE));
 	public static final RegistryObject<Item> NETHERITE_SUNEATE = ITEMS.register("netherite_suneate", () -> new OYoroiItem(OYoroiMaterial.NETHERITE, ArmorItem.Type.BOOTS, ModelPointer.SUNEATE));
 
+	// public static final RegistryObject<Item> PAPER_ZUNARI_KABUTO = ITEMS.register("paper_zunari_kabuto", () -> new OYoroiItem(OYoroiMaterial.PAPER, ArmorItem.Type.HELMET, ModelPointer.ZUNARI_KABUTO, 0xeeeeee));
+	public static final RegistryObject<Item> PAPER_SUJI_KABUTO = ITEMS.register("paper_suji_kabuto", () -> new OYoroiItem(OYoroiMaterial.PAPER, ArmorItem.Type.HELMET, ModelPointer.SUJI_KABUTO, 0xeeeeee));
+	public static final RegistryObject<Item> PAPER_DO = ITEMS.register("paper_do-maru", () -> new OYoroiItem(OYoroiMaterial.PAPER, ArmorItem.Type.CHESTPLATE, ModelPointer.DO, 0xeeeeee));
+	public static final RegistryObject<Item> PAPER_DO_K = ITEMS.register("paper_do-maru_k", () -> new OYoroiItem(OYoroiMaterial.PAPER, ArmorItem.Type.CHESTPLATE, ModelPointer.DO_K, 0xeeeeee));
+	public static final RegistryObject<Item> PAPER_DO_S = ITEMS.register("paper_do-maru_s", () -> new OYoroiItem(OYoroiMaterial.PAPER, ArmorItem.Type.CHESTPLATE, ModelPointer.DO_S, 0xeeeeee));
+	public static final RegistryObject<Item> PAPER_HAIDATE = ITEMS.register("paper_haidate", () -> new OYoroiItem(OYoroiMaterial.PAPER, ArmorItem.Type.LEGGINGS, ModelPointer.HAIDATE, 0xeeeeee));
+	public static final RegistryObject<Item> PAPER_SUNEATE = ITEMS.register("paper_suneate", () -> new OYoroiItem(OYoroiMaterial.PAPER, ArmorItem.Type.BOOTS, ModelPointer.SUNEATE, 0xeeeeee));
+
 	public static final RegistryObject<Item> HAKAMA = ITEMS.register("hakama", () -> new OYoroiItem(OYoroiMaterial.LEATHER, ArmorItem.Type.LEGGINGS, ModelPointer.HAKAMA));
+	public static final RegistryObject<Item> WOOLEN_HAKAMA = ITEMS.register("woollen_hakama", () -> new OYoroiItem(OYoroiMaterial.WOOL, ArmorItem.Type.LEGGINGS, ModelPointer.HAKAMA));
 
 	@SubscribeEvent
 	public static void creativeTabBuildContents(BuildCreativeModeTabContentsEvent  event){
@@ -71,6 +81,7 @@ public class ModItems {
 			ITEMS.getEntries().stream().filter(entry -> entry.get() instanceof OYoroiItem).forEach(entry -> event.accept(entry));
 		}else if(event.getTabKey()==CreativeModeTabs.INGREDIENTS){
 			event.accept(LAMELLAR_PLATE);
+			event.accept(PAPER_PLATE);
 		}
 	}
 }

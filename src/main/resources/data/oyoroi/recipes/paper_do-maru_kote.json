@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "l l",
+        "lkl",
+        "i i"
+    ],
+    "key": {
+        "l": {
+            "tag": "minecraft:wool"
+        },
+        "k": {
+            "item": "oyoroi:paper_do-maru"
+        },
+        "i": {
+            "item": "minecraft:lilac"
+        }
+    },
+    "result": {
+        "item": "oyoroi:paper_do-maru_k"
+    }
+}

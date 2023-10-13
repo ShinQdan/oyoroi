@@ -7,6 +7,7 @@ import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ArmorMaterials;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.Tags.Items;
 
 public class OYoroiMaterial implements ArmorMaterial {
@@ -30,6 +31,8 @@ public class OYoroiMaterial implements ArmorMaterial {
 	public static final OYoroiMaterial NETHERITE_D2_E1 = new OYoroiMaterial("netherite_oyoroi", ArmorMaterials.NETHERITE, 2, 37, 2);
 
 	public static final OYoroiMaterial LEATHER = new OYoroiMaterial("leather_oyoroi", ArmorMaterials.LEATHER, 1, 5, Ingredient.of(Items.LEATHER));
+	public static final OYoroiMaterial WOOL = new OYoroiMaterial("woollen_oyoroi", ArmorMaterials.LEATHER, 0, 5, Ingredient.of(Blocks.WHITE_WOOL));
+	public static final OYoroiMaterial PAPER = new OYoroiMaterial("paper_oyoroi", ArmorMaterials.LEATHER, 0, 5, Ingredient.of(ModItems.PAPER_PLATE.get()));
 
 	private final String name;
 	private final int[] durability;

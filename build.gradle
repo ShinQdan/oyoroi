@@ -197,7 +197,7 @@ jar {
         attributes([
                 "Specification-Title"     : mod_name,
                 "Specification-Vendor"    : vendor_name,
-                "Specification-Version"   : "1", // Version number
+                "Specification-Version"   : "3", // Version number
                 "Implementation-Title"    : project.name,
                 "Implementation-Version"  : project.jar.archiveVersion,
                 "Implementation-Vendor"   : vendor_name,

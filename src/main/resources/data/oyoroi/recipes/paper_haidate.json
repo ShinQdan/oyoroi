@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "lhl",
+        "l l",
+        "l l"
+    ],
+    "key": {
+        "l": {
+            "item": "oyoroi:paper_lamellar_plate"
+        },
+        "h": {
+            "item": "oyoroi:woollen_hakama"
+        }
+    },
+    "result": {
+        "item": "oyoroi:paper_haidate"
+    }
+}

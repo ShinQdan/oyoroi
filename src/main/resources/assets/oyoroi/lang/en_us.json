@@ -2,8 +2,10 @@
     "itemGroup.oyoroi": "O-Yoroi Items",
 
     "item.oyoroi.iron_lamellar_plate": "Iron Lamellar Plate",
+    "item.oyoroi.paper_lamellar_plate": "Paper Lamellar Plate",
 
     "item.oyoroi.hakama": "Hakama",
+    "item.oyoroi.woollen_hakama": "Woollen Hakama",
 
     "item.oyoroi.iron_zunari_kabuto": "Iron Zunari Kabuto",
 
@@ -50,6 +52,17 @@
     "item.oyoroi.netherite_do-maru_s": "Netherite Do",
     "item.oyoroi.netherite_do-maru_m": "Netherite Do",
     "item.oyoroi.netherite_do-maru_l": "Netherite Do",
+
+    "item.oyoroi.paper_suji_kabuto": "Paper Suji Kabuto",
+    "item.oyoroi.paper_suji_kabuto_menpo": "Paper Suji Kabuto",
+
+    "item.oyoroi.paper_do-maru": " Paper Do",
+    "item.oyoroi.paper_do-maru_k": "Paper Do",
+    "item.oyoroi.paper_do-maru_s": "Paper Do",
+
+    "item.oyoroi.paper_haidate": "Paper Haidate",
+
+    "item.oyoroi.paper_suneate": "Paper Suneate",
 
     "item.oyoroi.netherite_haidate": "Netherite Haidate",
 

@@ -27,14 +27,24 @@ import net.minecraftforge.client.extensions.common.IClientItemExtensions;
 
 public class OYoroiItem extends DyeableArmorItem {
 	private final ModelPointer model;
+	private final int baseColor;
 
 	public OYoroiItem(ArmorMaterial material, ArmorItem.Type armorType, ModelPointer model){
 		this(material, armorType, new Item.Properties(), model);
 	}
 
+	public OYoroiItem(ArmorMaterial material, ArmorItem.Type armorType, ModelPointer model, int baseColor){
+		this(material, armorType, new Item.Properties(), model, baseColor);
+	}
+
 	public OYoroiItem(ArmorMaterial material, ArmorItem.Type armorType, Item.Properties properties, ModelPointer model){
+		this(material, armorType, new Item.Properties(), model, 0xc0c0c0);
+	}
+
+	public OYoroiItem(ArmorMaterial material, ArmorItem.Type armorType, Item.Properties properties, ModelPointer model, int baseColor){
 		super(material, armorType, properties);
 		this.model = model;
+		this.baseColor = baseColor;
 	}
 	
 	@Override
@@ -117,7 +127,7 @@ public class OYoroiItem extends DyeableArmorItem {
 	@Override
 	public int getColor(ItemStack p_41122_){
 		CompoundTag compoundtag = p_41122_.getTagElement("display");
-		return compoundtag != null && compoundtag.contains("color", 99) ? compoundtag.getInt("color") : 0xc0c0c0;
+		return compoundtag != null && compoundtag.contains("color", 99) ? compoundtag.getInt("color") : baseColor;
 	}
 
 	public static enum ModelPointer{

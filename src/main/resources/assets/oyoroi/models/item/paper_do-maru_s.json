@@ -1,0 +1,9 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "oyoroi:item/paper_do-maru",
+		"layer1": "oyoroi:item/paper_do-maru_kote_wool",
+		"layer2": "oyoroi:item/iron_do-maru_kote",
+		"layer3": "oyoroi:item/paper_do-maru_small_sode"
+	}
+}

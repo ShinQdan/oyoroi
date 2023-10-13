@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ldl",
+        "   ",
+        "   "
+    ],
+    "key": {
+        "l": {
+            "item": "oyoroi:paper_lamellar_plate"
+        },
+        "d": {
+            "item": "oyoroi:paper_do-maru_k"
+        }
+    },
+    "result": {
+        "item": "oyoroi:paper_do-maru_s"
+    }
+}
