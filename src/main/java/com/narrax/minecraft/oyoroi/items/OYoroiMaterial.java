@@ -8,7 +8,7 @@ import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ArmorMaterials;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraftforge.common.Tags.Items;
+import net.neoforged.neoforge.common.Tags.Items;
 
 public class OYoroiMaterial implements ArmorMaterial {
 	public static final OYoroiMaterial IRON = new OYoroiMaterial("iron_oyoroi", ArmorMaterials.IRON, 1, 15, Ingredient.of(ModItems.LAMELLAR_PLATE.get()));
